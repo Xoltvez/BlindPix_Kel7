@@ -1,6 +1,9 @@
 module.exports = (sequelize, Sequelize) => {
     const Quiz = sequelize.define('quiz', {
-        quiz: {
+        question: {
+            type: Sequelize.STRING,
+        },
+        image: {
             type: Sequelize.STRING,
         },
         a: {
@@ -13,16 +16,13 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING,
         },
         d: {
-            type: Sequelize.STRING,
+            type: Sequelize.STRING, 
         },
         key: {
             type: Sequelize.STRING,
         },
-        categoryId: {
-            type: Sequelize.INTEGER,
-        },
         levelId: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER, 
         },
     });
     return Quiz;

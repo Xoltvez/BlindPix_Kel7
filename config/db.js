@@ -2,7 +2,7 @@ module.exports = {
     HOST: 'localhost',
     USER: 'root',
     PASSWORD: '',
-    DB: 'quizapi',
+    DB: 'blindpix_psaj_1',
     dialect: 'mysql',
     pool: {
         max: 5,
@@ -10,5 +10,4 @@ module.exports = {
         acquire: 30000,
         idle: 10000,
     },
-
 }
